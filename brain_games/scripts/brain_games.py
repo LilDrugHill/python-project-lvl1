@@ -1,7 +1,14 @@
 #!/usr/bin/env python
-def main():
-    return print("Welcome to the Brain Games!")
+"""Основной."""
 
-    
-if  __name__ == '__main__':
+from brain_games.cli import welcome_user
+
+
+def main():
+    """Делает грязь."""
+    print('Welcome to the Brain Games!')
+    welcome_user()
+
+
+if __name__ == '__main__':
     main()
