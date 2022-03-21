@@ -4,6 +4,6 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: LilDrugHill/python-project-lvl1
+        uses: actions/checkout@v2
       - name: lint
         run: make lint
