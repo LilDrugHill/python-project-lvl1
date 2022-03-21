@@ -1,7 +1,8 @@
-name: GitHub Actions Demo
+name: lint
 on: push
 jobs:
-  runs-on: ubuntu-latest
+  my-job:
+    runs-on: ubuntu-latest
     steps:
-      - run: make lint 
-      
+      - name: my-step
+        run: make lint
