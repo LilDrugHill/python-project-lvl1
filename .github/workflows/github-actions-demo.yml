@@ -1,8 +1,8 @@
 name: lint
 on: push
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
     steps:
+        uses: LilDrugHill/python-project-lvl1/actions
       - name: my-step
         run: make lint
