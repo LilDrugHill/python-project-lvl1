@@ -2,8 +2,7 @@ name: alint
 on: push
 jobs:
   my-job:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
-        uses: LilDrugHill/python-project-lvl1/blob/main/Makefile@main
       - name: lint
-        run: sudo make lint
+        run: make lint
