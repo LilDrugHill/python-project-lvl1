@@ -1,5 +1,6 @@
 name: alint
 on: push
+permissions: read-all|write-all
 jobs:
   my-job:
     runs-on: ubuntu-latest
