@@ -4,7 +4,7 @@ jobs:
   my-job:
     runs-on: macos-latest
     steps:
-        name: install
+      - name: install
         run: pip install poetry
       - name: lint
         run: poetry run flake8 brain_games  
