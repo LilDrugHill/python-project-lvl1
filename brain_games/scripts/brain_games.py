@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Основной."""
+"""STEP 3."""
 
 from brain_games.cli import welcome_user
 

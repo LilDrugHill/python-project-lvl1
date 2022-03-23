@@ -5,8 +5,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: lint
-<<<<<<< HEAD
-        run: make lint
-=======
-        run: sudo make lint
->>>>>>> 0795dfd7b36c5fd5cdb41b5b6b578cabdf461f6b
+        run: poetry run flake8 brain_games  
