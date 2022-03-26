@@ -1,11 +1,9 @@
 """Рандомайзер ответа и примера."""
 
-from os import nice
 import random
-from re import I
 
 
-def random_number():
+def random_numbers():
     """Функция создания рандомных чисел."""
     sign = random.randrange(1, 3)
     number1 = random.randrange(1, 100)
@@ -15,7 +13,7 @@ def random_number():
 
 
 def choosen_expression_result(way, numbers):
-    """Функция производства примера и ответа в зависимости от way."""
+    """Функция производства примера и ответа в зависимости от way. Numbers - список прееданный из random_nambers содержащий случайные числа."""
     if way == 1:
         expression = numbers[0]
         if numbers[0] % 2 == 0:
