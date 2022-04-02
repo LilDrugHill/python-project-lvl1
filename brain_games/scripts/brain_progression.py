@@ -6,7 +6,7 @@ from brain_games.check_count import counter_game
 
 def brain_progression():
     """Функция запуска игры. Тут в функцию поступает way."""
-    counter_game(5)  # <-
+    counter_game(4)  # <-
 
 
 if __name__ == '__main__':
