@@ -16,6 +16,6 @@ def progression():
     while len(expression) < rand_len:
         expression.append(index)
         index += numbers[1]
-    answer = expression[randrange(0, 9)]
+    answer = expression[randrange(0, rand_len)]
     expression[expression.index(answer)] = '..'
     return expression, answer
