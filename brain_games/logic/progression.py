@@ -3,8 +3,8 @@ from random import randrange
 
 from brain_games.random_numbers import random_numbers
 
-recommend_len_max = 15
-recommend_len_min = 10
+recommend_len_max = 10
+recommend_len_min = 5
 rand_len = randrange(recommend_len_min, recommend_len_max)
 
 
