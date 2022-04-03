@@ -12,10 +12,11 @@ def progression():
     """Вычисление примера и результата."""
     numbers = random_numbers()
     expression = []
-    index = numbers[0]
-    while len(expression) < rand_len:
-        expression.append(index)
-        index += numbers[1]
+    fist_number = numbers[0]
+    progression_step = randrange(2, 5)
+    while len(expression) <= rand_len:
+        expression.append(fist_number)
+        fist_number += progression_step
     answer = expression[randrange(0, rand_len)]
-    expression[expression.index(answer)] = '..'
+    expression[expression.fist_number(answer)] = '..'
     return expression, answer
