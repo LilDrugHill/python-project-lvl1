@@ -18,5 +18,5 @@ def progression():
         expression.append(fist_number)
         fist_number += progression_step
     answer = expression[randrange(0, rand_len)]
-    expression[expression.fist_number(answer)] = '..'
+    expression[expression.index(answer)] = '..'
     return expression, answer
