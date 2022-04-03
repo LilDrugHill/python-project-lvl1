@@ -14,9 +14,9 @@ def progression():
     expression = []
     fist_number = numbers[0]
     progression_step = randrange(2, 5)
-    while len(expression) <= 10:
+    while len(expression) <= rand_len:
         expression.append(fist_number)
         fist_number += progression_step
     answer = expression[randrange(0, rand_len)]
     expression[expression.index(answer)] = '..'
-    return expression, answer
+    return ' '.join(map(str, expression)), answer
