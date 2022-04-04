@@ -1,4 +1,12 @@
 [[package]]
+name = "asciinema"
+version = "2.1.0"
+description = "Terminal session recorder"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "astor"
 version = "0.8.1"
 description = "Read/rewrite/write Python ASTs"
@@ -43,7 +51,7 @@ yaml = ["pyyaml"]
 name = "cachecontrol"
 version = "0.12.10"
 description = "httplib2 caching for requests"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -60,7 +68,7 @@ redis = ["redis (>=2.10.5)"]
 name = "cachy"
 version = "0.3.0"
 description = "Cachy provides a simple yet effective caching library."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -73,7 +81,7 @@ msgpack = ["msgpack-python (>=0.5,<0.6)"]
 name = "certifi"
 version = "2021.10.8"
 description = "Python package for providing Mozilla's CA Bundle."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -81,7 +89,7 @@ python-versions = "*"
 name = "cffi"
 version = "1.15.0"
 description = "Foreign Function Interface for Python calling C code."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -92,7 +100,7 @@ pycparser = "*"
 name = "charset-normalizer"
 version = "2.0.12"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5.0"
 
@@ -103,7 +111,7 @@ unicode_backport = ["unicodedata2"]
 name = "cleo"
 version = "0.8.1"
 description = "Cleo allows you to create beautiful and testable command-line interfaces."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -114,7 +122,7 @@ clikit = ">=0.6.0,<0.7.0"
 name = "clikit"
 version = "0.6.2"
 description = "CliKit is a group of utilities to build beautiful and testable command line interfaces."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -135,7 +143,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "crashtest"
 version = "0.3.1"
 description = "Manage Python errors with ease"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6,<4.0"
 
@@ -143,7 +151,7 @@ python-versions = ">=3.6,<4.0"
 name = "cryptography"
 version = "36.0.2"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -170,7 +178,7 @@ python-versions = ">=3.6,<4.0"
 name = "distlib"
 version = "0.3.4"
 description = "Distribution utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -194,7 +202,7 @@ python-versions = "*"
 name = "filelock"
 version = "3.6.0"
 description = "A platform independent file lock."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -403,7 +411,7 @@ gitdb = ">=4.0.1,<5"
 name = "html5lib"
 version = "1.1"
 description = "HTML parser based on the WHATWG HTML specification"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -421,7 +429,7 @@ lxml = ["lxml"]
 name = "idna"
 version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -429,7 +437,7 @@ python-versions = ">=3.5"
 name = "importlib-metadata"
 version = "4.11.3"
 description = "Read metadata from Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -459,7 +467,7 @@ plugins = ["setuptools"]
 name = "jeepney"
 version = "0.7.1"
 description = "Low-level, pure Python DBus protocol wrapper."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -471,7 +479,7 @@ trio = ["trio", "async-generator"]
 name = "keyring"
 version = "23.5.0"
 description = "Store and access your passwords safely."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -489,7 +497,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 name = "lockfile"
 version = "0.12.2"
 description = "Platform-independent file locking module"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -505,7 +513,7 @@ python-versions = "*"
 name = "msgpack"
 version = "1.0.3"
 description = "MessagePack (de)serializer."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -513,7 +521,7 @@ python-versions = "*"
 name = "packaging"
 version = "20.9"
 description = "Core utilities for Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -524,7 +532,7 @@ pyparsing = ">=2.0.2"
 name = "pastel"
 version = "0.2.1"
 description = "Bring colors to your terminal."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -552,7 +560,7 @@ flake8-polyfill = ">=1.0.2,<2"
 name = "pexpect"
 version = "4.8.0"
 description = "Pexpect allows easy control of interactive console applications."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -563,7 +571,7 @@ ptyprocess = ">=0.5"
 name = "pkginfo"
 version = "1.8.2"
 description = "Query metadatdata from sdists / bdists / installed packages."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -574,7 +582,7 @@ testing = ["coverage", "nose"]
 name = "platformdirs"
 version = "2.5.1"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -586,7 +594,7 @@ test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock 
 name = "poetry"
 version = "1.1.13"
 description = "Python dependency management and packaging made easy."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -612,7 +620,7 @@ virtualenv = ">=20.0.26,<21.0.0"
 name = "poetry-core"
 version = "1.0.8"
 description = "Poetry PEP 517 Build Backend"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -628,7 +636,7 @@ python-versions = ">=3.3"
 name = "ptyprocess"
 version = "0.7.0"
 description = "Run a subprocess in a pseudo terminal"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -644,7 +652,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "pycparser"
 version = "2.21"
 description = "C parser in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -682,7 +690,7 @@ python-versions = ">=3.5"
 name = "pylev"
 version = "1.4.0"
 description = "A pure Python Levenshtein implementation that's not freaking GPL'd."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -690,7 +698,7 @@ python-versions = "*"
 name = "pyparsing"
 version = "3.0.7"
 description = "Python parsing module"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -701,7 +709,7 @@ diagrams = ["jinja2", "railroad-diagrams"]
 name = "pywin32-ctypes"
 version = "0.2.0"
 description = ""
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -717,7 +725,7 @@ python-versions = ">=3.6"
 name = "requests"
 version = "2.27.1"
 description = "Python HTTP for Humans."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*"
 
@@ -735,7 +743,7 @@ use_chardet_on_py3 = ["chardet (>=3.0.2,<5)"]
 name = "requests-toolbelt"
 version = "0.9.1"
 description = "A utility belt for advanced users of python-requests"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -757,7 +765,7 @@ docutils = ">=0.11,<1.0"
 name = "secretstorage"
 version = "3.3.1"
 description = "Python bindings to FreeDesktop.org Secret Service API"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -769,7 +777,7 @@ jeepney = ">=0.6"
 name = "shellingham"
 version = "1.4.0"
 description = "Tool to Detect Surrounding Shell"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0,!=3.1,!=3.2,!=3.3,>=2.6"
 
@@ -777,7 +785,7 @@ python-versions = "!=3.0,!=3.1,!=3.2,!=3.3,>=2.6"
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -825,7 +833,7 @@ test = ["pytest (>=3.6)", "pytest-cov", "pytest-django", "zope.component", "sybi
 name = "tomlkit"
 version = "0.10.1"
 description = "Style preserving TOML library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6,<4.0"
 
@@ -841,7 +849,7 @@ python-versions = ">=3.6"
 name = "urllib3"
 version = "1.26.9"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
 
@@ -854,7 +862,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 name = "virtualenv"
 version = "20.14.0"
 description = "Virtual Python Environment builder"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
@@ -872,7 +880,7 @@ testing = ["coverage (>=4)", "coverage-enable-subprocess (>=1)", "flaky (>=3)", 
 name = "webencodings"
 version = "0.5.1"
 description = "Character encoding aliases for legacy web content"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -909,7 +917,7 @@ typing_extensions = ">=3.6,<5.0"
 name = "zipp"
 version = "3.7.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -920,9 +928,13 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "4c664e5639ae13d947bbe115278e0af6aeffbc95470d2c826f3a10c7ffb2c4b2"
+content-hash = "d2b715f3082a6919fc0ca8893892d1f806431158a75da64ee349098b132aff68"
 
 [metadata.files]
+asciinema = [
+    {file = "asciinema-2.1.0-py3-none-any.whl", hash = "sha256:00afd5ba5b07197ec5454c70fa2a5d064ee27736654cd5cbe816dfc87576366f"},
+    {file = "asciinema-2.1.0.tar.gz", hash = "sha256:7bdb358c1f6d61b07169c5476b2f9607ce66da12e78e4c17b7c898d72402cddc"},
+]
 astor = [
     {file = "astor-0.8.1-py2.py3-none-any.whl", hash = "sha256:070a54e890cefb5b3739d19f30f5a5ec840ffc9c50ffa7d23cc9fc1a38ebbfc5"},
     {file = "astor-0.8.1.tar.gz", hash = "sha256:6a6effda93f4e1ce9f618779b2dd1d9d84f1e32812c23a29b3fff6fd7f63fa5e"},
