@@ -1,10 +1,10 @@
 """Основание игры."""
-from brain_games.games.calc import calc
-from brain_games.games.even import even
-from brain_games.games.gcd import gcd
-from brain_games.games.prime import prime
-from brain_games.games.progression import progression
+from brain_games.scripts.brain_calc import calc
+from brain_games.scripts.brain_even import even
 from brain_games.scripts.brain_games import main
+from brain_games.scripts.brain_gcd import gcd
+from brain_games.scripts.brain_prime import prime
+from brain_games.scripts.brain_progression import progression
 
 name = main()
 while_breaker = -10
