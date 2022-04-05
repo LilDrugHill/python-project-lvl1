@@ -3,12 +3,12 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-https://asciinema.org/a/484255
+<iframe src="https://asciinema.org/a/484255" title="brain-even demonstration"></iframe>
 
-https://asciinema.org/a/484256
+<iframe src="https://asciinema.org/a/484256" title="brain-calc demonstration"></iframe>
 
-https://asciinema.org/a/484257
+<iframe src="https://asciinema.org/a/484257" title="brain-gcd demonstration"></iframe>
 
-https://asciinema.org/a/484258
+<iframe src="https://asciinema.org/a/484258" title="brain-progression demonstration"></iframe>
 
-https://asciinema.org/a/484259
+<iframe src="https://asciinema.org/a/484259" title="brain-prime demonstration"></iframe>

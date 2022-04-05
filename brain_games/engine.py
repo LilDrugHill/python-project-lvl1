@@ -1,9 +1,13 @@
 """Основание игры."""
-
-from brain_games.expr_result import choosen_expression_result
+from brain_games.games.calc import calc
+from brain_games.games.even import even
+from brain_games.games.gcd import gcd
+from brain_games.games.prime import prime
+from brain_games.games.progression import progression
 from brain_games.scripts.brain_games import main
 
 name = main()
+while_breaker = -10
 
 
 def counter_game(way):
@@ -19,11 +23,25 @@ def counter_game(way):
         4: 'What number is missing in the progression?',
         5: 'Answer "yes" if given number is prime. Otherwise answer "no".',
     }
+    expression_result = {
+        1: even(),
+        2: calc(),
+        3: gcd(),
+        4: progression(),
+        5: prime(),
+    }
     print(introductory_word.get(way))
     right_answers = 0
-    right_answers = answer_check(choosen_expression_result(way))
+    right_answers = answer_check(expression_result.get(way))
     while right_answers in range(0, 3):
-        right_answers += answer_check(choosen_expression_result(way))
+        expression_result = {
+            1: even(),
+            2: calc(),
+            3: gcd(),
+            4: progression(),
+            5: prime(),
+        }
+        right_answers += answer_check(expression_result.get(way))
     if right_answers == 3:
         print(f'Congratulations, {name}!')
 
@@ -44,5 +62,5 @@ def answer_check(exp_answer):
         f"'{answer}' is wrong answer ;(. Correct answer was '{exp_answer[1]}'.",
     )
     print(f"Let's try again, {name}!")
-    right_answers = -10
+    right_answers = while_breaker
     return right_answers
