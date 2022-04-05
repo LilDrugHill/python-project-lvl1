@@ -3,7 +3,7 @@
 
 from brain_games.engine import counter_game
 
-game_id = 4
+game_id = 5
 
 
 def brain_prime():

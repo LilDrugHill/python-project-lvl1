@@ -3,7 +3,7 @@
 
 from brain_games.engine import counter_game
 
-game_id = 5
+game_id = 4
 
 
 def brain_progression():
