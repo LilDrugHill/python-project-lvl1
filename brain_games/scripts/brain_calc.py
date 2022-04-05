@@ -3,7 +3,7 @@
 
 from random import randrange
 
-import brain_games.engine 
+import brain_games.engine
 
 game_id = 2
 

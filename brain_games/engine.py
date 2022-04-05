@@ -1,10 +1,10 @@
 """Основание игры."""
-import brain_games.scripts.brain_calc 
-import brain_games.scripts.brain_even 
-import brain_games.scripts.brain_games 
-import brain_games.scripts.brain_gcd 
-import brain_games.scripts.brain_prime 
-import brain_games.scripts.brain_progression 
+import brain_games.scripts.brain_calc
+import brain_games.scripts.brain_even
+import brain_games.scripts.brain_games
+import brain_games.scripts.brain_gcd
+import brain_games.scripts.brain_prime
+import brain_games.scripts.brain_progression
 
 name = brain_games.scripts.brain_games.main()
 while_breaker = -10
