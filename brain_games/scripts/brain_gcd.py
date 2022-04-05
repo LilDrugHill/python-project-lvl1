@@ -3,7 +3,7 @@
 
 from brain_games.engine import counter_game
 
-game_id = 2
+game_id = 3
 
 
 def brain_gcd():
