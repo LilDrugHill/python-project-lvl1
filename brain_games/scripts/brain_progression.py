@@ -3,7 +3,7 @@
 
 from random import randrange
 
-from brain_games.engine import counter_game
+import brain_games.engine
 
 game_id = 4
 recommend_len_max = 10
@@ -13,7 +13,7 @@ rand_len = randrange(recommend_len_min, recommend_len_max)
 
 def brain_progression():
     """Функция запуска игры. Тут в функцию поступает game_id."""
-    counter_game(game_id)  # <-
+    brain_games.engine.counter_game(game_id)  # <-
 
 
 def progression():

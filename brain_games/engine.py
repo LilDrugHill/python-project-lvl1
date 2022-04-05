@@ -1,20 +1,20 @@
 """Основание игры."""
-from brain_games.scripts.brain_calc import calc
-from brain_games.scripts.brain_even import even
-from brain_games.scripts.brain_games import main
-from brain_games.scripts.brain_gcd import gcd
-from brain_games.scripts.brain_prime import prime
-from brain_games.scripts.brain_progression import progression
+import brain_games.scripts.brain_calc 
+import brain_games.scripts.brain_even 
+import brain_games.scripts.brain_games 
+import brain_games.scripts.brain_gcd 
+import brain_games.scripts.brain_prime 
+import brain_games.scripts.brain_progression 
 
-name = main()
+name = brain_games.scripts.brain_games.main()
 while_breaker = -10
 
 
-def counter_game(way):
-    """Choosing intriductory word depeding on way and count corrent answers.
+def counter_game(game_id):
+    """Choosing intriductory word depeding on game_id and count corrent answers.
 
     Args:
-        way: the main constant determining the course of the game.
+        game_id: the main constant determining the course of the game.
     """
     introductory_word = {
         1: 'Answer "yes" if the number is even, otherwise answer "no".',
@@ -24,24 +24,24 @@ def counter_game(way):
         5: 'Answer "yes" if given number is prime. Otherwise answer "no".',
     }
     expression_result = {
-        1: even(),
-        2: calc(),
-        3: gcd(),
-        4: progression(),
-        5: prime(),
+        1: brain_games.scripts.brain_even.even(),
+        2: brain_games.scripts.brain_calc.calc(),
+        3: brain_games.scripts.brain_gcd.gcd(),
+        4: brain_games.scripts.brain_progression.progression(),
+        5: brain_games.scripts.brain_prime.prime(),
     }
-    print(introductory_word.get(way))
+    print(introductory_word.get(game_id))
     right_answers = 0
-    right_answers = answer_check(expression_result.get(way))
+    right_answers = answer_check(expression_result.get(game_id))
     while right_answers in range(0, 3):
         expression_result = {
-            1: even(),
-            2: calc(),
-            3: gcd(),
-            4: progression(),
-            5: prime(),
+            1: brain_games.scripts.brain_even.even(),
+            2: brain_games.scripts.brain_calc.calc(),
+            3: brain_games.scripts.brain_gcd.gcd(),
+            4: brain_games.scripts.brain_progression.progression(),
+            5: brain_games.scripts.brain_prime.prime(),
         }
-        right_answers += answer_check(expression_result.get(way))
+        right_answers += answer_check(expression_result.get(game_id))
     if right_answers == 3:
         print(f'Congratulations, {name}!')
 
