@@ -1,30 +1,12 @@
 #!/usr/bin/env python
 """STEP 9."""
-
-from random import randrange
-
-import brain_games.engine
-
-game_id = 5
+import brain_games.countering_and_cheking_answers
+from brain_games.games_logic import prime
 
 
 def brain_prime():
     """Функция запуска игры. Тут в функцию поступает game_id."""
-    brain_games.engine.counter_game(game_id)  # <-
-
-
-def prime():
-    """Вычисление примера и результата."""
-    number = randrange(1, 100)
-    index = 100
-    divisor_count = 0
-    while index > 0:
-        if number % index == 0:
-            divisor_count += 1
-        index -= 1
-    if divisor_count == 2:
-        return f'{number}', 'yes'
-    return f'{number}', 'no'
+    brain_games.countering_and_cheking_answers.counter_game(prime)  # <-
 
 
 if __name__ == '__main__':
