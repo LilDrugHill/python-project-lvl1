@@ -3,6 +3,8 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
+Директория представляет собой сборник из 5 игр для победы в которых потребуется знания в обасти математики и арифметики.
+
 [![asciicast](https://asciinema.org/a/484255.svg)](https://asciinema.org/a/484255)
 
 [![asciicast](https://asciinema.org/a/484256.svg)](https://asciinema.org/a/484256)
