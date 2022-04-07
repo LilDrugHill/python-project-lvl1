@@ -4,6 +4,7 @@ from brain_games.scripts.brain_games import main
 
 name = main()
 while_breaker = -10
+so_far_str = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def counter_game(function):
@@ -17,7 +18,7 @@ def counter_game(function):
         'calc': 'What is the result of the expression?',
         'gcd': 'Find the greatest common divisor of given numbers.',
         'progression': 'What number is missing in the progression?',
-        'prime': 'Answer "yes" if given number is prime. Otherwise answer "no".',
+        'prime': so_far_str,
     }
     print(introductory_word.get(function))
     right_answers = 0
