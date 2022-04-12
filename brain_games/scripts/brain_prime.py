@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """STEP 9."""
-import brain_games.countering_and_cheking_answers
-from brain_games.games_logic import prime
+import brain_games.engine
+import brain_games.games.prime
 
 
 def brain_prime():
-    """Функция запуска игры. Тут в функцию поступает game_id."""
-    brain_games.countering_and_cheking_answers.counter_game(prime)  # <-
+    """Функция запуска игры."""
+    brain_games.engine.countering_games_score(brain_games.games.prime)  # <-
 
 
 if __name__ == '__main__':

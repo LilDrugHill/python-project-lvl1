@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """STEP 6."""
-import brain_games.countering_and_cheking_answers
-from brain_games.games_logic import calc
+import brain_games.engine
+import brain_games.games.calc
 
 
 def brain_calc():
-    """Функция запуска игры. Тут в функцию поступает game_id."""
-    brain_games.countering_and_cheking_answers.counter_game(calc)
+    """Функция запуска игры."""
+    brain_games.engine.countering_games_score(brain_games.games.calc)
 
 
 if __name__ == '__main__':
