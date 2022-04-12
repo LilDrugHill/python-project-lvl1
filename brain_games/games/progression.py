@@ -19,5 +19,6 @@ def playing():
     expression[expression.index(answer)] = '..'
     return ' '.join(map(str, expression)), answer
 
+
 if __name__ == '__main__':
     playing()

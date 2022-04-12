@@ -15,5 +15,6 @@ def playing():
                 return f'{first_number} {sec_number}', index
         index -= 1
 
+
 if __name__ == '__main__':
     playing()

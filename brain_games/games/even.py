@@ -11,5 +11,6 @@ def playing():
         return number, 'yes'
     return number, 'no'
 
+
 if __name__ == '__main__':
     playing()

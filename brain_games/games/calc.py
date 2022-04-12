@@ -20,5 +20,6 @@ def playing():
         expression = f'{first_number} * {sec_number}'
     return expression, answer
 
+
 if __name__ == '__main__':
     playing()

@@ -17,5 +17,6 @@ def playing():
         return f'{number}', 'yes'
     return f'{number}', 'no'
 
+
 if __name__ == '__main__':
     playing()
