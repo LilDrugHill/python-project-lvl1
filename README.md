@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/LilDrugHill/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/LilDrugHill/python-project-lvl1/actions)
 
-<a href="https://codeclimate.com/github/LilDrugHill/python-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/15fc76895c5b47131ddf63a97f256e8a377fb81c/maintainability" /></a>
+<a href="https://codeclimate.com/github/LilDrugHill/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/b3213492c0ffdd252ca1/maintainability" /></a>
 
 
 Директория представляет собой сборник из 5 игр для победы в которых потребуется знания в обасти математики и арифметики. Победа в игре защитывается при даче 3х правильных ответов подряд.

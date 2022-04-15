@@ -6,7 +6,7 @@ LOSE_MASSAGE = "\"{0}\" is wrong answer ;(. Correct answer was \"{1}\".\nLet's t
 
 
 def game_starting_and_score_counting(game_logic_module):
-    """Importing game_logic_module and start scoring.
+    """Import game_logic_module and start scoring.
 
     Args:
         game_logic_module: the main constant determining the course of the game.
