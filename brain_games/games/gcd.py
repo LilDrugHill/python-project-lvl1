@@ -1,20 +1,18 @@
 """Gcd logic."""
+from math import gcd
 from random import randrange
 
-print('Find the greatest common divisor of given numbers.')
+MAX_POSIBLE_VALUE = 100
+INTRO_WORD = 'Find the greatest common divisor of given numbers.'
 
 
-def playing():
+def expression_and_answer_generating():
     """Вычисление примера и результата."""
-    first_number = randrange(1, 100)
-    sec_number = randrange(1, 100)
-    index = 100
-    while index:
-        if first_number % index == 0:
-            if sec_number % index == 0:
-                return f'{first_number} {sec_number}', index
-        index -= 1
+    first_number = randrange(1, MAX_POSIBLE_VALUE)
+    second_number = randrange(1, MAX_POSIBLE_VALUE)
+    answer = gcd(first_number, second_number)
+    return f'{first_number} {second_number}', answer
 
 
 if __name__ == '__main__':
-    playing()
+    expression_and_answer_generating()

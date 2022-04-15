@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """STEP 8."""
-import brain_games.engine
-import brain_games.games.progression
+from brain_games import engine
+from brain_games.games import progression
 
 
 def brain_progression():
     """Функция запуска игры."""
-    brain_games.engine.countering_games_score(brain_games.games.progression)
+    engine.game_starting_and_score_counting(progression)
 
 
 if __name__ == '__main__':

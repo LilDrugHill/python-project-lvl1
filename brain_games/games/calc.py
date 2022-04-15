@@ -1,25 +1,25 @@
 """Calc logic."""
-from random import randrange
+from random import choice, randrange
 
-print('What is the result of the expression?')
+INTRO_WORD = 'What is the result of the expression?'
 
 
-def playing():
+def expression_and_answer_generating():
     """Вычисление примера и результата for clac."""
     first_number = randrange(1, 100)
-    sec_number = randrange(1, 100)
-    sign = randrange(1, 3)
-    if sign == 1:
-        answer = first_number + sec_number
-        expression = f'{first_number} + {sec_number}'
-    elif sign == 2:
-        answer = first_number - sec_number
-        expression = f'{first_number} - {sec_number}'
-    elif sign == 3:
-        answer = first_number * sec_number
-        expression = f'{first_number} * {sec_number}'
+    second_number = randrange(1, 100)
+    sign = choice(['+', '-', '*'])
+    if sign == '+':
+        answer = first_number + second_number
+        expression = f'{first_number} + {second_number}'
+    elif sign == '-':
+        answer = first_number - second_number
+        expression = f'{first_number} - {second_number}'
+    elif sign == '*':
+        answer = first_number * second_number
+        expression = f'{first_number} * {second_number}'
     return expression, answer
 
 
 if __name__ == '__main__':
-    playing()
+    expression_and_answer_generating()

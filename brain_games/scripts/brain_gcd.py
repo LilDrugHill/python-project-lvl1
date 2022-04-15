@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 """STEP 7."""
-import brain_games.engine
-import brain_games.games.gcd
+from brain_games import engine
+from brain_games.games import gcd
 
 
 def brain_gcd():
     """Функция запуска игры."""
-    brain_games.engine.countering_games_score(brain_games.games.gcd)
+    engine.game_starting_and_score_counting(gcd)
 
 
 if __name__ == '__main__':

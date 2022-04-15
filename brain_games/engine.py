@@ -1,40 +1,28 @@
 """Основание игры."""
 from brain_games.scripts.brain_games import main
 
-name = main()
-while_breaker = -10
-so_far_str = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+TIMES_TO_WIN = 3
 
 
-def countering_games_score(module):
-    """Choosing intriductory word depeding on module and count corrent answers.
+def game_starting_and_score_counting(game_logic_module):
+    """Choosing intriductory word depeding on game_logic_module and count corrent answers.
 
     Args:
-        module: the main constant determining the course of the game.
+        game_logic_module: the main constant determining the course of the game.
     """
-    right_answers = 0
-    right_answers = answer_checking(module.playing())
-    while right_answers in range(0, 3):
-        right_answers += answer_checking(module.playing())
-    if right_answers == 3:
-        print(f'Congratulations, {name}!')
-
-
-def answer_checking(exp_answer):
-    """Проверка ответа и вывод слов поддержки.
-
-    Args:
-        exp_answer: tuple containing expression and answer.
-    """
-    print(f'Question: {exp_answer[0]}')
-    answer = input()
-    if answer == str(exp_answer[1]):
-        print('Correct!')
-        right_answers = 1
-        return right_answers
-    print(
-        f"'{answer}' is wrong answer ;(. Correct answer was '{exp_answer[1]}'.",
-    )
-    print(f"Let's try again, {name}!")
-    right_answers = while_breaker
-    return right_answers
+    name = main()
+    print(game_logic_module.INTRO_WORD)
+    for time in range(TIMES_TO_WIN):
+        expression, right_answer = game_logic_module.expression_and_answer_generating()
+        print(f'Question: {expression}')
+        players_answer = str(input())
+        if str(right_answer) == players_answer:
+            print('Correct!')
+        else:
+            print(
+                f"'{players_answer}' is wrong answer ;(. Correct answer was '{right_answer}'.",
+            )
+            print(f"Let's try again, {name}!")
+            break
+        if time == (list(range(TIMES_TO_WIN)))[-1]:
+            print(f'Congratulations, {name}!')
