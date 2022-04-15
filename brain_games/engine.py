@@ -2,7 +2,8 @@
 from brain_games.scripts.brain_games import main
 
 TIMES_TO_WIN = 3
-LOSE_MASSAGE = "\"{0}\" is wrong answer ;(. Correct answer was \"{1}\".\nLet's try again, {2}!"
+LOSE_MASSAGE = "\"{0}\" is wrong answer ;(.\
+Correct answer was \"{1}\".\nLet's try again, {2}!"
 
 
 def game_starting_and_score_counting(game_logic_module):
@@ -14,7 +15,9 @@ def game_starting_and_score_counting(game_logic_module):
     name = main()
     print(game_logic_module.INTRO_WORD)
     for time in range(TIMES_TO_WIN):
-        expression, right_answer = game_logic_module.expression_and_answer_generating()
+        (expression, right_answer) = (
+            game_logic_module.expression_and_answer_generating()
+        )
         print(f'Question: {expression}')
         players_answer = str(input())
         if str(right_answer) == players_answer:
