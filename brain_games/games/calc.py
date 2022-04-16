@@ -1,7 +1,8 @@
 """Calc logic."""
 from random import choice, randrange
 
-INTRO_WORD = 'What is the result of the expression?'
+INTRO = 'What is the result of the expression?'
+MAX_POSIBLE_VALUE = 100
 
 
 def expression_and_answer_generating():

@@ -6,7 +6,7 @@ from brain_games.games import gcd
 
 def brain_gcd():
     """Функция запуска игры."""
-    engine.game_starting_and_score_counting(gcd)
+    engine.game_starting(gcd)
 
 
 if __name__ == '__main__':

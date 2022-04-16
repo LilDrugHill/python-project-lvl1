@@ -6,7 +6,7 @@ from brain_games.games import progression
 
 def brain_progression():
     """Функция запуска игры."""
-    engine.game_starting_and_score_counting(progression)
+    engine.game_starting(progression)
 
 
 if __name__ == '__main__':

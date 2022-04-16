@@ -3,7 +3,7 @@ from math import gcd
 from random import randrange
 
 MAX_POSIBLE_VALUE = 100
-INTRO_WORD = 'Find the greatest common divisor of given numbers.'
+INTRO = 'Find the greatest common divisor of given numbers.'
 
 
 def expression_and_answer_generating():

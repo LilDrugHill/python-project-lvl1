@@ -3,14 +3,15 @@ from random import randrange
 
 RECOMMEND_LEN_MAX = 10
 RECOMMEND_LEN_MIN = 5
-rand_len = randrange(RECOMMEND_LEN_MIN, RECOMMEND_LEN_MAX)
-INTRO_WORD = 'What number is missing in the progression?'
+MAX_POSSIBLE_VALUE = 100
+INTRO = 'What number is missing in the progression?'
 
 
 def expression_and_answer_generating():
     """Вычисление примера и результата for progression."""
     expression = []
-    first_number = randrange(1, 100)
+    rand_len = randrange(RECOMMEND_LEN_MIN, RECOMMEND_LEN_MAX)
+    first_number = randrange(1, MAX_POSSIBLE_VALUE)
     progression_step = randrange(2, 5)
     while len(expression) <= rand_len:
         expression.append(first_number)

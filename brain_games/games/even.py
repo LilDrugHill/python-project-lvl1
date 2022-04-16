@@ -1,7 +1,8 @@
 """Even logic."""
 from random import randrange
 
-INTRO_WORD = 'Answer "yes" if the number is even, otherwise answer "no".'
+INTRO = 'Answer "yes" if the number is even, otherwise answer "no".'
+MAX_POSIBLE_VALUE = 100
 
 
 def expression_and_answer_generating():
