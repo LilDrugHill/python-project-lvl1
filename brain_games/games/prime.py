@@ -24,7 +24,7 @@ def is_prime(number):
         if number % index == 0:
             number_of_divisors += 1
         index -= 1
-    return bool(True) if number_of_divisors <= 2 else bool(False)
+    return number_of_divisors <= 2
 
 
 if __name__ == '__main__':
