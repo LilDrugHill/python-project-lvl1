@@ -1,15 +1,16 @@
 """Prime logic."""
+import math
 from random import randrange
 
 MAX_POSSIBLE_VALUE = 100
 INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def expression_and_answer_generating():
+def generate_expression_and_answer():
     """Вычисление примера и результата for prime."""
     number = randrange(1, MAX_POSSIBLE_VALUE)
     expression = f'{number}'
-    return expression, 'yes' if is_prime(number) else 'no'
+    return expression, 'no' if is_prime(number) else 'yes'
 
 
 def is_prime(number):
@@ -18,14 +19,11 @@ def is_prime(number):
     Args:
         number: given number.
     """
-    number_of_divisors = 0
-    index = number
-    while index != 0:
-        if number % index == 0:
-            number_of_divisors += 1
-        index -= 1
-    return number_of_divisors <= 2
-
+    index = 2
+    while index < math.sqrt(number):
+        if not number % index:
+            return 1
+        index += 1
 
 if __name__ == '__main__':
-    expression_and_answer_generating()
+    generate_expression_and_answer()

@@ -2,25 +2,24 @@
 
 import prompt
 
-HELLO_WORDS = 'Welcome to the Brain Games!'
 NUMBER_OF_ROUNDS = 3
 LOOSE_MASSAGE = "\"{0}\" is wrong answer ;(.\
 Correct answer was \"{1}\".\nLet's try again, {2}!"
 
 
 def game_starting(game):
-    """Import game and start scoring.
+    """start.
 
     Args:
         game: the main constant determining the course of the game.
     """
-    print(HELLO_WORDS)
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.INTRO)
     for _ in range(NUMBER_OF_ROUNDS):
         (expression, right_answer) = (
-            game.expression_and_answer_generating()
+            game.generate_expression_and_answer()
         )
         print(f'Question: {expression}')
         players_answer = input()

@@ -7,7 +7,7 @@ MAX_POSSIBLE_VALUE = 100
 INTRO = 'What number is missing in the progression?'
 
 
-def expression_and_answer_generating():
+def generate_expression_and_answer():
     """Вычисление примера и результата for progression."""
     expression = []
     rand_len = randrange(RECOMMEND_LEN_MIN, RECOMMEND_LEN_MAX)
@@ -22,4 +22,4 @@ def expression_and_answer_generating():
 
 
 if __name__ == '__main__':
-    expression_and_answer_generating()
+    generate_expression_and_answer()
