@@ -25,5 +25,6 @@ def is_prime(number):
             return 1
         index += 1
 
+
 if __name__ == '__main__':
     generate_expression_and_answer()
