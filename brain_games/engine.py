@@ -3,12 +3,10 @@
 import prompt
 
 NUMBER_OF_ROUNDS = 3
-LOOSE_MASSAGE = "\"{0}\" is wrong answer ;(.\
-Correct answer was \"{1}\".\nLet's try again, {2}!"
 
 
-def game_starting(game):
-    """start.
+def start(game):
+    """Import game and start scoring.
 
     Args:
         game: the main constant determining the course of the game.
@@ -22,11 +20,12 @@ def game_starting(game):
             game.generate_expression_and_answer()
         )
         print(f'Question: {expression}')
-        players_answer = input()
-        if str(right_answer) == players_answer:
+        player_answer = input()
+        if str(right_answer) == player_answer:
             print('Correct!')
         else:
-            print(LOOSE_MASSAGE.format(players_answer, right_answer, name))
+            print(f"\"{player_answer}\" is wrong answer ;(.Correct answer was \"{right_answer}\".\
+            \nLet's try again, {name}!")
             break
     else:
         print(f'Congratulations, {name}!')

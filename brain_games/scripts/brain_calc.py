@@ -6,7 +6,7 @@ from brain_games.games import calc
 
 def brain_calc():
     """Функция запуска игры."""
-    engine.game_starting(calc)
+    engine.start(calc)
 
 
 if __name__ == '__main__':

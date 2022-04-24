@@ -6,7 +6,7 @@ from brain_games.games import prime
 
 def brain_prime():
     """Функция запуска игры."""
-    engine.game_starting(prime)
+    engine.start(prime)
 
 
 if __name__ == '__main__':

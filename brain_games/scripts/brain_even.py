@@ -6,7 +6,7 @@ from brain_games.games import even
 
 def brain_even():
     """Функция запуска игры."""
-    engine.game_starting(even)
+    engine.start(even)
 
 
 if __name__ == '__main__':
