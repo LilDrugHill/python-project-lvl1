@@ -10,7 +10,7 @@ def generate_expression_and_answer():
     """Вычисление примера и результата for prime."""
     number = randrange(1, MAX_POSSIBLE_VALUE)
     expression = f'{number}'
-    return expression, 'no' if is_prime(number) else 'yes'
+    return expression, 'yes' if is_prime(number) else 'no'
 
 
 def is_prime(number):
@@ -19,11 +19,14 @@ def is_prime(number):
     Args:
         number: given number.
     """
+    if number == 1:
+        return 0
     index = 2
     while index <= math.sqrt(number):
         if not number % index:
-            return 1
+            return 0
         index += 1
+    return 1
 
 
 if __name__ == '__main__':
