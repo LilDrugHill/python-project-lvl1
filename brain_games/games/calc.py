@@ -12,13 +12,11 @@ def generate_expression_and_answer():
     sign = choice(['+', '-', '*'])
     if sign == '+':
         answer = first_number + second_number
-        expression = f'{first_number} + {second_number}'
     elif sign == '-':
         answer = first_number - second_number
-        expression = f'{first_number} - {second_number}'
     elif sign == '*':
         answer = first_number * second_number
-        expression = f'{first_number} * {second_number}'
+    expression = f'{first_number} {sign} {second_number}'
     return expression, answer
 
 
