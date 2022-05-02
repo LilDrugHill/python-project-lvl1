@@ -19,7 +19,7 @@ def is_prime(number):
     Args:
         number: given number.
     """
-    if number == 1:
+    if number <= 1:
         return 0
     index = 2
     while index <= math.sqrt(number):
